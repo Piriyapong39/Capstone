@@ -48,7 +48,7 @@ relay_dehumid.on()
 relay_mog.on()
 relay_fan.on()
 
-url = os.getenv("MONGODB_URL")
+url = os.getenv("HEROKU_URL")
 response = requests.get(url)
 data = response.json()
 temp = data["Temperature"]
